@@ -1,0 +1,23 @@
+{
+  "name": "backend-deploy-dummy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaushik-Shetti-Kilowott/backend-deploy-dummy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kaushik-Shetti-Kilowott/backend-deploy-dummy/issues"
+  },
+  "homepage": "https://github.com/Kaushik-Shetti-Kilowott/backend-deploy-dummy#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
