@@ -32,6 +32,6 @@ jobs:
           switches: -avzr --delete
           path: ./*
           remote_path: /var/www/my-app/
-          remote_host: ec2-16-16-76-21.eu-north-1.compute.amazonaws.com
+          remote_host: "${{secrets.EC2_INSTANCE}}"
           remote_user: ubuntu
           remote_key: "${{ secrets.SSH_PRIVATE_KEY }}"
