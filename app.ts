@@ -1,3 +1,5 @@
+import dotenv from "dotenv";
+dotenv.config({ path: `.env` });
 import express, { Application, Request, Response } from "express";
 const app: Application = express();
 
@@ -10,7 +12,7 @@ app.get("/", async (req: Request, res: Response): Promise<Response> => {
 const PORT = 3000;
 try {
   app.listen(PORT, (): void => {
-    console.log(`Connected successfully on port ${PORT}`);
+    console.log(`Connected successfully on port ${PORT} in ${process.env.NODE_ENV}`);
   });
 } catch (error: any) {
   console.error(`Error occured: ${error.message}`);
