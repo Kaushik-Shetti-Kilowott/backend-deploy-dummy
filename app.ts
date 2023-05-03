@@ -9,10 +9,10 @@ app.get("/", async (req: Request, res: Response): Promise<Response> => {
     });
   });
 
-const PORT = 3000;
+const PORT = 3030;
 try {
   app.listen(PORT, (): void => {
-    console.log(`Connected successfully on port ${PORT} in ${process.env.NODE_ENV}`);
+    console.log(`Connected successfully on port!! ${PORT} in ${process.env.NODE_ENV}`);
   });
 } catch (error: any) {
   console.error(`Error occured: ${error.message}`);
