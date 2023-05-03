@@ -8,7 +8,7 @@ app.get("/", async (req: Request, res: Response): Promise<Response> => {
       message: `First Deployment Successfull(TESTING)! on PORT : ${process.env.PORT} and ENV : ${process.env.NODE_ENV}` ,
     });
   });
-
+console.log("Env",process.env.PORT);
 const PORT = 3000;
 try {
   app.listen(PORT, (): void => {
