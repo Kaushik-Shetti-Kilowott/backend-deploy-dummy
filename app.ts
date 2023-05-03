@@ -9,7 +9,7 @@ app.get("/", async (req: Request, res: Response): Promise<Response> => {
     });
   });
 
-const PORT = 3030;
+const PORT = 3000;
 try {
   app.listen(PORT, (): void => {
     console.log(`Connected successfully on port!! ${PORT} in ${process.env.NODE_ENV}`);
